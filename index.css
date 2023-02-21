@@ -2,10 +2,6 @@
 /*========================
   FOR ALL
 ==============================*/
-html{
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
 *::selection {
   background: #ff0000;
   color: #fff !important;
@@ -45,7 +41,6 @@ body {
 
 html::-webkit-scrollbar-thumb {
   background: #040404;
-  overflow-y: scroll;
 }
 html::-webkit-scrollbar {
   width: 10px;
@@ -57,7 +52,6 @@ html::-webkit-scrollbar-track {
  NAVBAR SECTION START
 =========================*/
 .navbar {
-  background: #5c5353;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -187,7 +181,6 @@ POPULAR SECTION START
 }
 
 .popular .box .box-content {
-  margin-top: 3px;
   text-align: center;
 }
 .popular .box .box-content h6 {
@@ -447,7 +440,7 @@ POPULAR SECTION START
  ==============================*/
 footer {
   background: #000;
-  padding: 50px;
+  padding: 150px;
 }
 footer a {
   font-weight: bold;
@@ -475,6 +468,7 @@ footer a {
 }
 .buycar_page .buycar .container .col-sm-7,
 .buycar_page .col-sm-4 {
+  background: #6a6d6e;
   min-height: 500px;
 }
 .buycar_page .buycar .container h6 {
@@ -618,7 +612,7 @@ footer a {
   color: #fff;
 }
 .about_us_page nav {
-  background: #5c5353;
+  background: rgb(247, 189, 189);
 }
 .about_us_page .about_us_main_page {
   margin: 160px auto;
@@ -766,9 +760,9 @@ textarea::placeholder {
    CONTACT US PAGE END
 ===================================*/
 
-/* 
+/*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE) */
-/* /*# sourceMappingURL=bootstrap.min.css.map * */
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+/*# sourceMappingURL=bootstrap.min.css.map *

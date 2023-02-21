@@ -10,7 +10,7 @@ const site=express();
 site.use(bodyParser.urlencoded({extended: true}));
 site.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/buyCarDB", {useNewUrlParser:true});
+mongoose.connect("mongodb+srv://admin-Harshal:Harshal@cluster0.7dnzpxp.mongodb.net", {useNewUrlParser:true});
 
 const buySchema={
     title:String,
@@ -50,44 +50,43 @@ const buyCar=mongoose.model("buyCar", buySchema);
 //     description: "hii"
 // });
 
+const mandeepSir=new buyCar({
+    title:"Lamborghini",
+    condition:"New",
+    price:4500000,
+    Company:"Lamborghini",
+    model:"Urus",
+    year:2022,
+    fueltype:"Petrol",
+    color:"orange",
+    description: "mamdeepSir car"
+});
 
-// const mandeepSir=new buyCar({
-//     title:"",
-//     condition:"New",
-//     price:4500000,
-//     Company:"Lamborghini",
-//     model:"Urus",
-//     year:2022,
-//     fueltype:"Petrol",
-//     color:"orange",
-//     description: "mamdeepSir car"
-// });
+const bhoomi=new buyCar({
+    title:"Audi",
+    condition:"New",
+    price:4000000,
+    Company:"Audi",
+    model:"c200",
+    year:2022,
+    fueltype:"Petrol",
+    color:"black",
+    description: "hello"
+});
 
-// const bhoomi=new buyCar({
-//     title:"Audi",
-//     condition:"New",
-//     price:4000000,
-//     Company:"Audi",
-//     model:"c200",
-//     year:2022,
-//     fueltype:"Petrol",
-//     color:"black",
-//     description: "hello"
-// });
-
-// const defaultItems=[ bhoomi, mandeepSir];
+const defaultItems=[ bhoomi, mandeepSir];
 
 
-// buyCar.insertMany(defaultItems, function(err){
-//     if(err)
-//     {
-//         console.log(err);
-//     }
-//     else
-//     {
-//         console.log("Successfully inserted data ");
-//     }
-// });
+buyCar.insertMany(defaultItems, function(err){
+    if(err)
+    {
+        console.log(err);
+    }
+    else
+    {
+        console.log("Successfully inserted data ");
+    }
+});
 
 
 

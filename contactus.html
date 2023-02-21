@@ -12,31 +12,31 @@
 
     <!--========== Link Custom Css  ===============-->
     <link rel="stylesheet" href="index.css">
-    <title>Lux Cars</title>
+    <title>Car Website</title>
 </head>
 
 <body class="contact_us_main_page">
 
     <!--================== Navbar Section Start ==================-->
     <nav class="navbar navbar-expand-sm fixed-top">
-        <a href="index.html" class="navbar-brand" data-aos="fade-right" data-aos-duration="2500"><span>L</span>ux Car</a>
+        <a href="index.html" class="navbar-brand" data-aos="fade-right" data-aos-duration="2500"><span>C</span>ar Website</a>
         <div>
             <ul class="navbar-nav" data-aos="fade-left" data-aos-duration="2500">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="aboutus.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="contactus.html" class="nav-link active">Contact</a></li>
+                <li class="nav-item"><a href="contactus.html" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="cars.html" class="nav-link">Cars</a></li>
             </ul>
         </div>
 
         <!--  -->
         <div>
             <ul class="navbar-nav">
-                <li class="nav-item"><a href="sellCar.html" class="ml-3 nav-link btn" style="background: #ff0000;">Sell
-                        Car -</a></li>
-                <li class="nav-item"><a href="buycar.html" class="ml-3 nav-link btn" style="background: #ff0000;">Buy
-                        Car +</a></li>
+                <li class="nav-item"><a href="" class="nav-link"><img src="" alt=""></a></li>
+                <li class="nav-item"><a href="buycar.html" class="ml-3 nav-link btn btn-danger">Buy Car +</a></li>
             </ul>
         </div>
+        <!--  -->
 
     </nav>
     <!--================== Navbar Section End ==================-->
@@ -66,7 +66,7 @@
                         </div>
                         <div class="form-group">
                             <label for="" class="font-weight-bold">User Number</label>
-                            <input type="number" class="font-weight-bold form-control" required
+                            <input type="email" class="font-weight-bold form-control" required
                                 placeholder="Enter Your User Number">
                         </div>
                         <div class="form-group">
@@ -74,7 +74,7 @@
                             <textarea rows="6" class="font-weight-bold form-control" required
                                 placeholder="How We Can Help You"></textarea>
                         </div>
-                        <a href="index.html"><button type="submit" onclick="func()"   class="btn">Submit</button></a>
+                        <button type="submit" class="btn">Submit</button>
                     </form>
                 </div>
             </div>
@@ -82,36 +82,12 @@
     </section>
 
     <!--================== Contact Us Main Section Start ==================-->
-
-    <footer>
-        <a href="">FreePrivacyPolicy © 2022. All rights reserved.<br><br>
-            Our Privacy Policy Our Terms of Use</a>
-    </footer>
-
-
-<script>
-    function func()
-    {
-        alert("Thanks for Contact Us 😊");
-        document.location.href='index.html';
-
-    }
-</script>
-
-
-
 </body>
 <!--========= Script For Bootstrap =======-->
 <script src="js/jquery.js"></script>
 <script src="js/pooper.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script>
-    //For Scroll
-    $(document).scroll(function () {
-        $(".navbar").toggleClass("scroll", $(this).scrollTop() > $(".navbar").height());
-    });
 
-</script>
 
 
 </html>
